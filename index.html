@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肖蘸罐罐米线 · 2026市场调研报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --gold: #d4af37;
+            --bronze: #b8860b;
+            --dark: #1a140f;
+            --accent: #e8d9c0;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.9;
+            color: #e8d9c0;
+            margin: 0;
+            padding: 0;
+            background: #0a0705;
+        }
+        .container {
+            max-width: 1120px;
+            margin: 40px auto;
+            background: var(--dark);
+            border: 1px solid #3c2f1f;
+            box-shadow: 0 0 80px rgba(212, 175, 55, 0.22);
+            padding: 80px 95px;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 50px;
+            margin-bottom: 60px;
+            border-bottom: 3px solid var(--gold);
+            position: relative;
+        }
+        .header::after {
+            content: "云南非遗 · 陶罐现煮 · 一罐煮万物";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--dark);
+            padding: 0 40px;
+            font-size: 15.5px;
+            color: var(--gold);
+            letter-spacing: 4px;
+        }
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 46px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -2px;
+            margin: 20px 0 12px;
+        }
+        .subtitle {
+            font-size: 19px;
+            color: var(--gold);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            letter-spacing: -1px;
+        }
+        h1 { 
+            font-size: 30px; 
+            border-left: 8px solid var(--bronze); 
+            padding-left: 26px; 
+            margin: 70px 0 32px;
+        }
+        h2 { font-size: 24px; margin: 55px 0 26px; }
+
+        .executive-summary {
+            background: #221b14;
+            padding: 42px;
+            border-left: 8px solid var(--gold);
+            margin: 50px 0;
+            font-size: 16.5px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+        }
+        .image-section { margin: 52px 0; text-align: center; }
+        .image-wrapper {
+            border: 1px solid #3c2f1f;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 25px 55px rgba(212, 175, 55, 0.18);
+            transition: all 0.4s ease;
+        }
+        .image-wrapper:hover {
+            transform: scale(1.025);
+            box-shadow: 0 30px 65px rgba(212, 175, 55, 0.25);
+        }
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-caption {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #c9b38a;
+            font-style: italic;
+        }
+        .image-caption::before {
+            content: "FIG. ";
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .chart-container {
+            margin: 50px 0;
+            padding: 35px;
+            background: #221b14;
+            border: 1px solid #3c2f1f;
+            border-radius: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: #221b14;
+        }
+        th, td {
+            border: 1px solid #3c2f1f;
+            padding: 18px 20px;
+        }
+        th {
+            background: #2a2218;
+            color: var(--gold);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 130px;
+            padding-top: 50px;
+            border-top: 1px solid #3c2f1f;
+            color: #a38b5f;
+            font-size: 14.5px;
+        }
+        .page-number {
+            position: absolute;
+            bottom: -45px;
+            right: 95px;
+            color: #66573d;
+        }
+        @media print {
+            body { background: white; color: #333; }
+            .container { box-shadow: none; border: 1px solid #ddd; background: white; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <p class="subtitle">2026 MARKET RESEARCH REPORT</p>
+            <h1 class="title">肖蘸罐罐米线</h1>
+            <p class="subtitle">陶罐现煮 · 非遗蘸水 · 全国化潜力深度调研</p>
+        </div>
+
+        <h1>执行摘要</h1>
+        <div class="executive-summary">
+            <p>肖蘸罐罐米线源于制陶世家“肖阿公”，2019年由传承人肖江标准化运营，以“祖传陶罐现煮 + 云南36味秘制蘸水”为核心差异化卖点，已从昆明地方小吃快速崛起为云南米线新顶流。</p>
+            <p>依托杨记誉诚集团供应链支持，品牌全国门店超20家（云南10余家 + 成都等多地），北京首店即将开业，纽约法拉盛店火爆出圈。单店坪效高达5100元/㎡，处于高速成长期。</p>
+            <p><strong>核心结论</strong>：在780亿元米线红海市场中，肖蘸凭借非遗工艺 + 强仪式感 + 亲民定价，已成功突围，2026-2030年有望成为罐罐米线全国标杆。</p>
+        </div>
+
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1015/900/520" alt="肖蘸罐罐米线品牌形象">
+            </div>
+            <p class="image-caption">图1：肖蘸罐罐米线官方品牌宣传形象（陶罐现煮 + 秘制蘸水）</p>
+        </div>
+
+        <h1>目录</h1>
+        <table>
+            <tr><td>1. 米线行业大背景</td><td style="text-align:right">03</td></tr>
+            <tr><td>2. 肖蘸罐罐米线品牌概况</td><td style="text-align:right">04</td></tr>
+            <tr><td>3. 发展现状与业绩表现</td><td style="text-align:right">05</td></tr>
+            <tr><td>4. 竞争格局分析</td><td style="text-align:right">06</td></tr>
+            <tr><td>5. 市场机会与挑战</td><td style="text-align:right">07</td></tr>
+            <tr><td>6. 未来展望与建议</td><td style="text-align:right">08</td></tr>
+        </table>
+
+        <h1>1. 米线行业大背景</h1>
+        <p>2026年中国米线（含米粉）市场规模预计780亿元，门店约18.5万家，年复合增长率7-8%。云南米线作为重要细分赛道，正借文旅与社交媒体东风爆发。</p>
+
+        <div class="chart-container">
+            <h3 style="text-align:center;color:#e8d9c0;margin-bottom:22px;">米线市场规模增长趋势（2017-2026）</h3>
+            <canvas id="marketChart" height="90"></canvas>
+        </div>
+
+        <h1>2. 肖蘸罐罐米线品牌概况</h1>
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/292/900/550" alt="陶罐现煮">
+            </div>
+            <p class="image-caption">图2：肖蘸罐罐米线特色陶罐现煮实物（保温持久，仪式感强）</p>
+        </div>
+        <p>核心卖点：“一罐煮万物、万物皆可蘸”——祖传陶罐现煮 + 云南36味秘制蘸水（腐乳、小米辣、木姜子等）。</p>
+
+        <h1>3. 发展现状与业绩表现</h1>
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/201/850/500" alt="门店实景">
+            </div>
+            <p class="image-caption">图3：昆明肖蘸罐罐米线门店实景</p>
+        </div>
+
+        <div class="chart-container">
+            <h3 style="text-align:center;color:#e8d9c0;margin-bottom:22px;">典型门店月营业额表现（万元）</h3>
+            <canvas id="storeChart" height="95"></canvas>
+        </div>
+
+        <h1>4. 竞争格局分析</h1>
+        <div class="chart-container">
+            <h3 style="text-align:center;color:#e8d9c0;margin-bottom:22px;">主要品牌门店数量对比（2026）</h3>
+            <canvas id="competitorChart" height="130"></canvas>
+        </div>
+
+        <h1>5. 市场机会与挑战</h1>
+        <table>
+            <tr><th width="50%">机会</th><th width="50%">挑战</th></tr>
+            <tr>
+                <td>• 社交媒体强传播<br>• 文旅IP绑定<br>• 连锁加盟潜力<br>• 国际化（纽约成功）</td>
+                <td>• 鲜米线供应链<br>• 低价内卷<br>• 规模扩张中的品质控制</td>
+            </tr>
+        </table>
+
+        <h1>6. 未来展望与建议</h1>
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/870/900/520" alt="未来愿景">
+            </div>
+            <p class="image-caption">图4：肖蘸罐罐米线全国化与国际化发展愿景</p>
+        </div>
+        <p>品牌处于高速成长期，2026-2030年门店有望翻倍，推荐投资者/加盟者重点关注北京店及集团支持。</p>
+
+        <div class="footer">
+            <p>数据来源：餐里眼研究院、红餐大数据、品牌公开信息、2026年行业报告</p>
+            <p>© Grok市场研究团队 · 2026年5月</p>
+            <div class="page-number">第 <span class="current-page">1</span> 页</div>
+        </div>
+    </div>
+
+    <script>
+        // 图表
+        new Chart(document.getElementById('marketChart'), {
+            type: 'line',
+            data: { labels: ['2017','2019','2021','2023','2025','2026'], datasets: [{ label: '市场规模（亿元）', data: [320,450,580,680,750,780], borderColor: '#d4af37', tension: 0.4, borderWidth: 5 }] },
+            options: { responsive: true, plugins: { legend: { display: false }}}
+        });
+        new Chart(document.getElementById('storeChart'), {
+            type: 'bar',
+            data: { labels: ['呈贡小店', '景区店', '平均'], datasets: [{ data: [20,52,35], backgroundColor: '#d4af37' }] },
+            options: { responsive: true, plugins: { legend: { display: false }}}
+        });
+        new Chart(document.getElementById('competitorChart'), {
+            type: 'bar',
+            data: { labels: ['蒙自源', '阿香米线', '肖蘸罐罐', '其他'], datasets: [{ data: [1700,800,25,165000], backgroundColor: ['#d4af37','#b8860b','#ffd700','#555'] }] },
+            options: { responsive: true, indexAxis: 'y', plugins: { legend: { display: false }}}
+        });
+    </script>
+</body>
+</html>
